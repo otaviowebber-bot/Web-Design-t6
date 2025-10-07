@@ -4,73 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologias Alemãs na Segunda Guerra Mundial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Tecnologias Alemãs na Segunda Guerra Mundial</h1>
+
+    <header class="hero-header">
+        <div class="hero-overlay">
+            <h1>Tecnologias Alemãs na Segunda Guerra Mundial</h1>
+            <p class="subtitle">Uma análise das armas e tecnologias que mudaram o rumo da história</p>
+        </div>
     </header>
 
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#introducao">Introdução</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#legado-moderno">Legado</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#conclusao">Conclusão</a>
+        </div>
+    </nav>
+
     <main>
-        <section id="introducao">
-            <h2>Introdução</h2>
+        
+        <section id="introducao">    
+            <h2>O Legado Inesperado: Tecnologia Nascida no Conflito</h2>
+            <img src="IMAGEMS/Alemanha.webp" alt="Alemanha">
             <p>
-                A Segunda Guerra Mundial (1939-1945) foi um dos maiores e mais devastadores conflitos da história, envolvendo países de todos os continentes e mudando profundamente o cenário político, social e tecnológico do século XX. A Alemanha, sob o comando do regime nazista, destacou-se não apenas pelo seu papel central no conflito, mas também pelo desenvolvimento de tecnologias militares avançadas. Buscando superioridade nos campos de batalha, os alemães investiram intensamente em inovação, criando equipamentos e sistemas que influenciaram tanto o desfecho da guerra quanto o progresso científico mundial nas décadas seguintes.
+                A Segunda Guerra Mundial não foi apenas uma batalha de exércitos, mas uma corrida desesperada pelo futuro tecnológico. Movida por uma ideologia de superioridade e a urgência de sobrepujar seus inimigos, a Alemanha Nazista liberou recursos sem precedentes em pesquisa. O legado desse esforço foi uma série de invenções que não apenas ditaram os rumos do conflito, mas também plantaram as sementes das tecnologias que transformariam nosso mundo, da conquista espacial ao nascimento dos computadores.
             </p>
         </section>
 
-        <div class="tech-container">
+        <section id="tecnologias">
+            <h2>Arsenal da Inovação</h2>
+            <div class="tech-container">
 
-            <div class="tech-item" id="v2">
-                <img src="https://i.ytimg.com/vi/V14Kk2Wb0-U/maxresdefault.jpg" alt="Foguete V-2 sendo preparado">
-                <h3>Foguetes V-2</h3>
-                <p>
-                    O foguete V-2 foi o primeiro míssil balístico de longo alcance do mundo. Serviu de base para o desenvolvimento de foguetes espaciais após a guerra.
-                </p>
+                <div class="tech-item" id="v2">
+                    <img src="IMAGEMS/Fusée_V2.jpg" alt="Foguete V-2 sendo preparado">
+                    <div class="card-content">
+                        <h3>Foguetes V-2</h3>
+                        <p>O primeiro míssil balístico guiado de longo alcance do mundo, a V-2 foi uma arma de terror e uma maravilha da engenharia.</p>
+                        <h4>Curiosidades:</h4>
+                        <ul class="curiosities-list">
+                            <li>Primeiro objeto humano a cruzar a Linha de Kármán, alcançando o espaço.</li>
+                            <li>Sua tecnologia foi a base para os foguetes Saturno V da NASA.</li>
+                            <li>Atingia mais de 5.000 km/h, tornando a interceptação impossível.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-item" id="panzer">
+                    <img src="IMAGEMS/Tiger_II_frontal_Munster.jpg" alt="Tanque Tiger 2">
+                    <div class="card-content">
+                        <h3>Tanques Panzer</h3>
+                        <p>A espinha dorsal da Blitzkrieg. Os tanques Tiger e Panther eram temidos por sua blindagem e poder de fogo devastador.</p>
+                        <h4>Curiosidades:</h4>
+                        <ul class="curiosities-list">
+                            <li>O canhão de 88mm do Tiger I era originalmente uma arma antiaérea.</li>
+                            <li>A blindagem frontal inclinada do Panther inspirou o design de tanques futuros.</li>
+                            <li>A complexidade mecânica os tornava propensos a avarias.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-item" id="me262">
+                    <img src="IMAGEMS/download (1).jpeg" alt="Caça a jato Messerschmitt Me 262">
+                    <div class="card-content">
+                        <h3>Jato Me 262</h3>
+                        <p>O primeiro caça a jato operacional da história. Sua velocidade deixava os aviões aliados para trás, marcando uma nova era na aviação.</p>
+                        <h4>Curiosidades:</h4>
+                        <ul class="curiosities-list">
+                            <li>Apelidado de "Schwalbe" (Andorinha) na versão de caça.</li>
+                            <li>Tinha uma versão de bombardeiro chamada "Sturmvogel" (Pássaro da Tempestade).</li>
+                            <li>Chegou tarde demais e em número insuficiente para mudar o curso da guerra aérea.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-item" id="uboat">
+                    <img src="IMAGEMS/U995_bows_torpedo_doors_anchor_German_World_War_Two_submarine_das_boot.jpg" alt="Submarino U-Boat tipo VIIC/41">
+                     <div class="card-content">
+                        <h3>U-Boats (Tipo XXI)</h3>
+                        <p>Os "lobos cinzentos" do Atlântico. O Tipo XXI foi o submarino mais avançado da guerra, com design hidrodinâmico e baterias aprimoradas.</p>
+                        <h4>Curiosidades:</h4>
+                        <ul class="curiosities-list">
+                            <li>Operavam em táticas de "matilha de lobos" (Rudeltaktik) para sobrecarregar comboios.</li>
+                            <li>O Tipo XXI podia ficar submerso por muito mais tempo que modelos anteriores.</li>
+                            <li>Seu design influenciou os submarinos da Guerra Fria.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-item" id="enigma">
+                    <img src="IMAGEMS/Enigma-Maquina-Nazi.jpg" alt="Máquina de criptografia Enigma">
+                     <div class="card-content">
+                        <h3>Máquina Enigma</h3>
+                        <p>Um dispositivo de criptografia eletromecânico que tornava as comunicações alemãs um quebra-cabeça complexo e mortal.</p>
+                        <h4>Curiosidades:</h4>
+                        <ul class="curiosities-list">
+                            <li>A quebra do código Enigma pelos Aliados em Bletchley Park encurtou a guerra em anos.</li>
+                            <li>Existiam diferentes versões para o exército, marinha e força aérea.</li>
+                            <li>O trabalho de Alan Turing foi fundamental para decifrar suas mensagens.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="tech-item" id="horten">
+                    <img src="IMAGEMS/hq720.jpg" alt="Caça Horten Ho 229">
+                     <div class="card-content">
+                        <h3>Horten Ho 229</h3>
+                        <p>Uma revolucionária "asa voadora" a jato. Seu design furtivo estava décadas à frente de seu tempo, inspirando bombardeiros modernos.</p>
+                        <h4>Curiosidades:</h4>
+                        <ul class="curiosities-list">
+                           <li>Considerado por muitos como o primeiro avião "stealth" (furtivo) da história.</li>
+                           <li>Construído primariamente de madeira para economizar metais estratégicos.</li>
+                           <li>O único protótipo sobrevivente está nos EUA, no acervo do museu Smithsonian.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section id="legado-moderno">
+            <h2>Do Passado ao Presente: O Legado das Tecnologias</h2>
+            <div class="legado-container">
+                <div class="legado-item">
+                    <div class="legado-card">
+                        <h3>Foguete V-2</h3>
+                        <p>Míssil balístico pioneiro.</p>
+                    </div>
+                    <span class="arrow">➔</span>
+                    <div class="legado-card moderno">
+                        <h3>Foguetes Espaciais</h3>
+                        <p>Base para a NASA e a exploração espacial (Ex: Saturn V, Falcon 9).</p>
+                    </div>
+                </div>
+                <div class="legado-item">
+                    <div class="legado-card">
+                        <h3>Jato Me 262</h3>
+                        <p>Primeiro caça a jato operacional.</p>
+                    </div>
+                    <span class="arrow">➔</span>
+                    <div class="legado-card moderno">
+                        <h3>Aviação a Jato</h3>
+                        <p>Revolucionou a aviação militar e comercial moderna.</p>
+                    </div>
+                </div>
+                <div class="legado-item">
+                    <div class="legado-card">
+                        <h3>Horten Ho 229</h3>
+                        <p>Design de "asa voadora" furtiva.</p>
+                    </div>
+                    <span class="arrow">➔</span>
+                    <div class="legado-card moderno">
+                        <h3>Bombardeiros Stealth</h3>
+                        <p>Inspirou aeronaves como o B-2 Spirit, focadas em furtividade.</p>
+                    </div>
+                </div>
+                <div class="legado-item">
+                    <div class="legado-card">
+                        <h3>U-Boat Tipo XXI</h3>
+                        <p>Submarino avançado e silencioso.</p>
+                    </div>
+                    <span class="arrow">➔</span>
+                    <div class="legado-card moderno">
+                        <h3>Submarinos Modernos</h3>
+                        <p>Seu design hidrodinâmico influenciou submarinos da Guerra Fria e atuais.</p>
+                    </div>
+                </div>
+                <div class="legado-item">
+                    <div class="legado-card">
+                        <h3>Máquina Enigma</h3>
+                        <p>Criptografia eletromecânica complexa.</p>
+                    </div>
+                    <span class="arrow">➔</span>
+                    <div class="legado-card moderno">
+                        <h3>Criptografia Digital</h3>
+                        <p>A necessidade de quebrá-la impulsionou a criação dos primeiros computadores e da computação moderna.</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="tech-item" id="panzer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Panzer_VI_Tiger_I_2.jpg/1200px-Panzer_VI_Tiger_I_2.jpg" alt="Tanque Panzer Tiger">
-                <h3>Tanques Panzer</h3>
-                <p>
-                    Os tanques Panzer, especialmente os modelos Tiger e Panther, eram conhecidos por sua poderosa blindagem e armamento, influenciando o design de veículos militares.
-                </p>
+        <section id="galeria">
+            <h2>Galeria de Protótipos e Conceitos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="IMAGEMS/Bundesarchiv_Bild_146-1981-147-30A,_Hochdruckpumpe_V-3.jpg" alt="Canhão V-3" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3>Canhão V-3</h3>
+                        <p>Um "supercanhão" projetado para bombardear Londres a partir da França.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMAGEMS/Goliath_miniature_tank.jpg" alt="Mina teleguiada Goliath" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3>Mina Goliath</h3>
+                        <p>Um pequeno tanque teleguiado carregado de explosivos, o precursor dos drones terrestres.</p>
+                    </div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="IMAGEMS/images.jpeg" alt="Fritz X - Bomba Guiada" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3>Bomba Guiada Fritz X</h3>
+                        <p>Uma das primeiras bombas guiadas de precisão, controlada por rádio.</p>
+                    </div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="IMAGEMS/11364h.jpg" alt="Caça-foguete Me 163 Komet" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3>Me 163 Komet</h3>
+                        <p>O único avião-foguete operacional da história, com uma velocidade de subida impressionante.</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="tech-item" id="me262">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Me_262A_at_NASM.jpg" alt="Caça a jato Messerschmitt Me 262">
-                <h3>Aviões a Jato</h3>
-                <p>
-                    O Messerschmitt Me 262 foi o primeiro caça a jato operacional da história, marcando o início da era dos jatos na aviação militar.
-                </p>
-            </div>
-
-            <div class="tech-item" id="uboat">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/U-995_2.jpg" alt="Submarino U-Boat tipo VIIC/41">
-                <h3>Submarinos U-Boat</h3>
-                <p>
-                    Os submarinos U-Boat foram essenciais para a estratégia naval alemã, atacando comboios aliados no Atlântico com tecnologia avançada.
-                </p>
-            </div>
-
-            <div class="tech-item" id="enigma">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Enigma_%28crittografia%29_-_Museo_scienza_e_tecnologia_Milano.jpg" alt="Máquina de criptografia Enigma">
-                <h3>Enigma</h3>
-                <p>
-                    A máquina Enigma criptografava mensagens militares. A quebra de seu código pelos Aliados foi um dos fatores decisivos para o fim da guerra.
-                </p>
-            </div>
-
-        </div> <section id="impacto">
-            <h2>Impacto</h2>
+        </section>
+      
+        <section id="conclusao">
+            <h2>O Legado Pós-Guerra e a Criação da NASA</h2>
+            <img src="IMAGEMS/berlim.webp" alt="berlim POS Guerra" class="img-berlim">
             <p>
-                Muitas dessas tecnologias influenciaram o desenvolvimento científico após a guerra, especialmente nas áreas de foguetes, aviação e computação.
+                Com o fim da guerra, cientistas e engenheiros alemães foram recrutados pelas potências vitoriosas na "Operação Paperclip". A tecnologia da V-2 impulsionou diretamente a corrida espacial, culminando na criação da NASA em 1958. Wernher von Braun, figura central do programa V-2, tornou-se o arquiteto dos foguetes Saturno V que levaram a humanidade à Lua.
+            </p>
+            <p>
+                Da mesma forma, os motores a jato do Me 262 definiram o futuro da aviação, os princípios da Enigma aceleraram a computação e o design dos U-boats influenciou a tecnologia submarina por décadas. Paradoxalmente, a maquinaria de guerra do Terceiro Reich tornou-se a semente para muitas das tecnologias que definem nosso mundo moderno.
             </p>
         </section>
+
     </main>
 
     <footer>
         <p>Página criada para fins educativos. © 2025</p>
+        <p>Todo o conteúdo deve ser visto em seu contexto histórico.</p>
     </footer>
+
+    <button id="back-to-top" title="Voltar ao topo">&#9650;</button>
+
+    <script>
+        // --- Lógica para o botão "Voltar ao Topo" ---
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
