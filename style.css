@@ -47,7 +47,7 @@ img {
 .hero-header {
     height: 60vh;
     /* ATENÇÃO: Verifique se o caminho 'IMAGEMS/tecnologias-bg.jpg' está correto! */
-    background-image: linear-gradient(rgba(44,62,80,0.7), rgba(44,62,80,0.7)), url('IMAGEMS/tecnologias-bg.jpg');
+    background-image: linear-gradient(rgba(44,62,80,0.7), rgba(44,62,80,0.7)), url('IMAGEMS/Alemanha.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -327,6 +327,27 @@ h2 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
+.img-intro {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin: 24px auto 24px auto;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow);
+}
+
+.img-projeto-gigante {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin: 24px auto 24px auto;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow);
+}
 
 /* ============================================= */
 /* 8. BOTÃO "VOLTAR AO TOPO" E RODAPÉ            */
@@ -388,4 +409,30 @@ footer {
     .arrow {
         transform: rotate(90deg); /* Aponta a seta para baixo em telas pequenas */
     }
+}
+
+.projetos-gigantescos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 32px 0;
+}
+
+.projeto-gigante-item {
+    background: var(--card-background);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-projeto-gigante {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 12px;
 }
