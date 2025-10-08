@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* ============================================= */
-/* 1. VARIÁVEIS CSS E RESET GERAL                */
+/* 1. VARIÁVEIS CSS E RESET GERAL                */
 /* ============================================= */
+
+/* Define variáveis de cor, borda, sombra e animação para uso em todo o site */
 :root {
     --primary-color: #2c3e50;      /* Azul escuro */
     --secondary-color: #34495e;    /* Azul acinzentado */
@@ -18,17 +20,20 @@
     --transition-speed: 0.3s;      /* Velocidade padrão para animações */
 }
 
+/* Remove margens e preenchimentos padrão, e define box-sizing para facilitar layouts */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
 
+/* Suaviza o scroll e ajusta o padding do topo para navegação fixa */
 html {
     scroll-behavior: smooth; 
     scroll-padding-top: 80px; 
 }
 
+/* Define fonte, cor de fundo e cor do texto para o corpo da página */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
@@ -36,17 +41,20 @@ body {
     line-height: 1.7;
 }
 
+/* Garante que todas as imagens não ultrapassem o tamanho do container */
 img {
     max-width: 100%;
     display: block;
 }
 
 /* ============================================= */
-/* 2. CABEÇALHO E NAVEGAÇÃO                      */
+/* 2. CABEÇALHO E NAVEGAÇÃO                      */
 /* ============================================= */
+
+/* Estiliza o cabeçalho principal com imagem de fundo e gradiente escuro */
 .hero-header {
     height: 60vh;
-    /* ATENÇÃO: Verifique se o caminho 'IMAGEMS/tecnologias-bg.jpg' está correto! */
+    /* Imagem de fundo do cabeçalho, com gradiente para facilitar leitura do texto */
     background-image: linear-gradient(rgba(44,62,80,0.7), rgba(44,62,80,0.7)), url('IMAGEMS/Alemanha.webp');
     background-size: cover;
     background-position: center;
@@ -58,18 +66,21 @@ img {
     color: var(--light-gray-color);
 }
 
+/* Título principal do cabeçalho */
 .hero-overlay h1 {
     font-size: 3.5rem;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     text-wrap: balance;
 }
 
+/* Subtítulo do cabeçalho */
 .hero-overlay .subtitle {
     font-size: 1.2rem;
     margin-top: 10px;
     opacity: 0.9;
 }
 
+/* Barra de navegação fixa no topo */
 .navbar {
     background-color: var(--primary-color);
     padding: 15px 0;
@@ -79,6 +90,7 @@ img {
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
+/* Container da navegação centralizado e espaçado */
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -87,6 +99,7 @@ img {
     gap: 40px;
 }
 
+/* Links do menu de navegação */
 .navbar a {
     color: var(--light-gray-color);
     text-decoration: none;
@@ -97,19 +110,23 @@ img {
     transition: background-color var(--transition-speed);
 }
 
+/* Efeito ao passar o mouse nos links do menu */
 .navbar a:hover {
     background-color: var(--accent-color);
 }
 
 /* ============================================= */
-/* 3. CONTEÚDO PRINCIPAL E SEÇÕES                */
+/* 3. CONTEÚDO PRINCIPAL E SEÇÕES                */
 /* ============================================= */
+
+/* Define largura máxima e espaçamento do conteúdo principal */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
+/* Estiliza cada seção do conteúdo */
 section {
     background: var(--card-background);
     margin-bottom: 40px;
@@ -119,6 +136,7 @@ section {
     animation: fadeIn 0.8s ease-out forwards;
 }
 
+/* Títulos das seções */
 h2 {
     font-size: 2.2rem;
     color: var(--secondary-color);
@@ -129,14 +147,17 @@ h2 {
 }
 
 /* ============================================= */
-/* 4. CARDS DE TECNOLOGIA                        */
+/* 4. CARDS DE TECNOLOGIA                        */
 /* ============================================= */
+
+/* Grid para os cards de tecnologias */
 .tech-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
+/* Card individual de tecnologia */
 .tech-item {
     background: var(--card-background);
     border-radius: var(--border-radius-md);
@@ -147,11 +168,13 @@ h2 {
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
 }
 
+/* Efeito de elevação ao passar o mouse */
 .tech-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
+/* Imagem do card de tecnologia */
 .tech-item img {
     width: 100%;
     height: 220px;
@@ -160,11 +183,13 @@ h2 {
     transition: filter var(--transition-speed), transform var(--transition-speed);
 }
 
+/* Imagem mais saturada e ampliada ao passar o mouse */
 .tech-item:hover img {
     filter: saturate(1);
     transform: scale(1.05);
 }
 
+/* Conteúdo textual do card */
 .card-content {
     padding: 20px;
     flex-grow: 1;
@@ -172,12 +197,14 @@ h2 {
     flex-direction: column;
 }
 
+/* Título do card */
 .card-content h3 {
     color: var(--primary-color);
     font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
+/* Subtítulo do card */
 .card-content h4 {
     margin-top: 15px;
     color: var(--secondary-color);
@@ -186,6 +213,7 @@ h2 {
     padding-top: 10px;
 }
 
+/* Lista de curiosidades */
 .curiosities-list {
     list-style: none;
     padding-left: 0;
@@ -193,12 +221,14 @@ h2 {
     font-size: 0.9rem;
 }
 
+/* Item da lista de curiosidades */
 .curiosities-list li {
     padding-left: 20px;
     position: relative;
     margin-bottom: 5px;
 }
 
+/* Ícone antes de cada curiosidade */
 .curiosities-list li::before {
     content: '▶';
     position: absolute;
@@ -209,14 +239,17 @@ h2 {
 }
 
 /* ============================================= */
-/* 5. SEÇÃO LEGADO MODERNO (NOVO)                  */
+/* 5. SEÇÃO LEGADO MODERNO (NOVO)                */
 /* ============================================= */
+
+/* Container dos cards de legado */
 .legado-container {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
+/* Linha de legado (tecnologia antiga ➔ moderna) */
 .legado-item {
     display: flex;
     align-items: center;
@@ -225,6 +258,7 @@ h2 {
     flex-wrap: wrap;
 }
 
+/* Card de legado */
 .legado-card {
     background-color: var(--light-gray-color);
     border: 1px solid #ddd;
@@ -239,37 +273,43 @@ h2 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+/* Título do card de legado */
 .legado-card h3 {
     color: var(--secondary-color);
     font-size: 1.3rem;
     margin-bottom: 5px;
 }
 
+/* Card de legado moderno */
 .legado-card.moderno {
     background-color: #eaf5ff;
     border-color: var(--accent-color);
 }
 
+/* Título do card moderno */
 .legado-card.moderno h3 {
     color: var(--primary-color);
 }
 
+/* Seta entre os cards */
 .arrow {
     font-size: 2.5rem;
     color: var(--accent-color);
     font-weight: 700;
 }
 
-
 /* ============================================= */
 /* 6. GALERIA DE IMAGENS                         */
 /* ============================================= */
+
+/* Grid da galeria */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
+/* Item individual da galeria */
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -277,10 +317,12 @@ h2 {
     box-shadow: var(--shadow);
 }
 
+/* Efeito de zoom na imagem da galeria ao passar o mouse */
 .gallery-item:hover img {
     transform: scale(1.1);
 }
 
+/* Legenda sobre a imagem, aparece ao passar o mouse */
 .gallery-caption {
     position: absolute;
     bottom: 0;
@@ -293,14 +335,17 @@ h2 {
     transition: transform 0.4s ease;
 }
 
+/* Legenda aparece ao passar o mouse */
 .gallery-item:hover .gallery-caption {
     transform: translateY(0);
 }
 
+/* Título da legenda */
 .gallery-caption h3 {
     font-size: 1.3rem;
 }
 
+/* Imagem da galeria com altura padronizada */
 .gallery-img {
     width: 100%;
     height: 250px;
@@ -311,10 +356,13 @@ h2 {
 /* ============================================= */
 /* 7. SEÇÃO DE CONCLUSÃO E IMAGENS               */
 /* ============================================= */
+
+/* Espaçamento entre parágrafos da conclusão */
 #conclusao p {
     margin-bottom: 1rem;
 }
 
+/* Imagens específicas da seção de conclusão */
 .img-nasa,
 .img-berlim {
     display: block;
@@ -327,6 +375,7 @@ h2 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
+/* Imagem da introdução */
 .img-intro {
     display: block;
     max-width: 500px;
@@ -338,6 +387,7 @@ h2 {
     box-shadow: var(--shadow);
 }
 
+/* Imagem dos projetos gigantescos */
 .img-projeto-gigante {
     display: block;
     max-width: 500px;
@@ -352,6 +402,8 @@ h2 {
 /* ============================================= */
 /* 8. BOTÃO "VOLTAR AO TOPO" E RODAPÉ            */
 /* ============================================= */
+
+/* Botão flutuante para voltar ao topo */
 #back-to-top {
     display: none;
     position: fixed;
@@ -368,6 +420,7 @@ h2 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
+/* Rodapé da página */
 footer {
     text-align: center;
     padding: 30px;
@@ -378,11 +431,14 @@ footer {
 /* ============================================= */
 /* 9. ANIMAÇÕES E RESPONSIVIDADE                 */
 /* ============================================= */
+
+/* Animação de fade-in para as seções */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Ajustes para telas menores (responsivo) */
 @media (max-width: 768px) {
     .hero-overlay h1 {
         font-size: 2.5rem;
@@ -411,6 +467,7 @@ footer {
     }
 }
 
+/* Grid dos projetos gigantescos */
 .projetos-gigantescos-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -418,6 +475,7 @@ footer {
     margin: 32px 0;
 }
 
+/* Card individual dos projetos gigantescos */
 .projeto-gigante-item {
     background: var(--card-background);
     border-radius: var(--border-radius-md);
@@ -428,6 +486,7 @@ footer {
     align-items: center;
 }
 
+/* Imagem dos projetos gigantescos (versão menor para grid) */
 .img-projeto-gigante {
     width: 100%;
     max-width: 350px;
